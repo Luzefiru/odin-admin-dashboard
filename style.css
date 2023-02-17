@@ -57,11 +57,15 @@ button {
   border: 2px red dashed;
 } */
 
+header,
+nav {
+  padding: 1rem;
+  padding-left: 3rem;
+}
+
 header {
   grid-area: header;
   background-color: var(--background);
-
-  padding: 1rem;
   
   display: grid;
   grid-auto-flow: column;
@@ -102,7 +106,7 @@ header > form {
 }
 
 .header__profile-picture {
-  width: 4rem;
+  width: 3rem;
   border-radius: 100%;
 }
 
@@ -164,6 +168,39 @@ aside {
 nav {
   grid-area: navbar;
   background-color: var(--background);
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 0;
+}
+
+.nav__greeting {
+  display: grid;
+  grid-template-areas: 
+    "picture message"
+    "picture name";
+  grid-template-columns: 1fr 5fr;
+  align-content: center;
+  column-gap: 0.25rem;
+
+  font-weight: 600;
+}
+
+.nav__greeting__profile-picture {
+  grid-area: picture;
+  width: 5rem;
+  border-radius: 100%;
+}
+
+.nav__greeting__message {
+  grid-area: message;
+  align-self: end;
+}
+
+.nav__greeting__profile-name {
+  grid-area: name;
+  align-self: start;
+  font-size: 1.5rem;
 }
 
 main {
