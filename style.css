@@ -55,7 +55,7 @@ aside {
   background-color: var(--primary);
 
   display: grid;
-  grid-template-rows: 4rem repeat(auto-fill, minmax(9rem, 1fr));
+  grid-template-rows: 4.5rem repeat(auto-fill, minmax(10rem, 1fr));
   row-gap: 2.5rem;
 }
 
@@ -82,9 +82,22 @@ aside {
 }
 
 .sidebar > ul > li {
+  padding: 0.25rem;
+
   font-size: 1.25rem;
   font-weight: 500;
   color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: 1.25rem;
+}
+
+.sidebar > ul > li > img[src*="svg"] {
+  width: 2rem;
+  padding-left: 0.25rem;
 }
 
 nav {
