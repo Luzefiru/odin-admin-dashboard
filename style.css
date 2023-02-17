@@ -78,7 +78,7 @@ aside {
 .logo-header__text {
   font-size: 2rem;
   font-weight: 500;
-  color: white;
+  color: var(--surface);
 }
 
 .sidebar > ul > li {
@@ -86,7 +86,7 @@ aside {
 
   font-size: 1.25rem;
   font-weight: 500;
-  color: white;
+  color: var(--surface);
 
   display: grid;
   grid-auto-flow: column;
