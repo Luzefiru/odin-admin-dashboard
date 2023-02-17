@@ -59,8 +59,7 @@ button {
 
 header,
 nav {
-  padding: 1rem;
-  padding-left: 3rem;
+  padding: 1rem 3rem;
 }
 
 header {
@@ -201,6 +200,26 @@ nav {
   grid-area: name;
   align-self: start;
   font-size: 1.5rem;
+}
+
+.nav__buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav__buttons > * {
+  background-color: var(--primary);
+  padding: 0.7rem 2rem;
+  width: 7rem;
+  border-radius: 20px;
+  color: var(--surface);
+  font-weight: 500;
+}
+
+.nav__buttons > *:hover {
+  background-color: var(--primary-variant);
 }
 
 main {
