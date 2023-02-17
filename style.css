@@ -8,6 +8,18 @@ html, body {
   height: 100%;
 }
 
+:root {
+  /* Color Palette */
+  --primary: #6200ee;
+  --primary-background: #f5eeff;
+  --primary-variant: #3600b2;
+  --secondary: #02dbc6;
+  --secondary-variant: #018687;
+  --background: #fefffe;
+  --surface: #fefffe;
+  --error: #b00020;
+}
+
 .dashboard-container {
   height: 100%;
 
