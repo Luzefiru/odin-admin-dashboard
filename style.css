@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body, html {
+html, body {
   height: 100%;
 }
 
@@ -15,7 +15,10 @@ body, html {
   grid-template-areas:
     "sidebar header"
     "sidebar navbar"
-    "sidebar content"
+    "sidebar content";
+  
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1.5fr 8fr;
 }
 
 .dashboard-container > * {
