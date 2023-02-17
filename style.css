@@ -31,7 +31,7 @@ button {
 :root {
   /* Color Palette */
   --primary: #6200ee;
-  --primary-background: #f5eeff;
+  --primary-background: #e7e1f1;
   --primary-variant: #3600b2;
   --secondary: #02dbc6;
   --secondary-variant: #018687;
@@ -61,19 +61,39 @@ header {
   grid-area: header;
   background-color: var(--background);
 
-  padding-top: 1rem;
+  padding: 1rem;
   
   display: grid;
   grid-auto-flow: column;
   align-items: center;
+
 }
 
 .header__button {
   width: 2rem;
 }
 
+header > form {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+#search {
+  background-color: var(--primary-background);
+  border-radius: 20px;
+  border: none;
+  height: 2rem;
+  flex: 1;
+  padding: 0.75rem;
+}
+
+#search:focus-visible {
+  outline: 2px solid #baafca;
+}
+
 .header__profile-picture {
-  width: 5rem;
+  width: 4rem;
   border-radius: 100%;
 }
 
