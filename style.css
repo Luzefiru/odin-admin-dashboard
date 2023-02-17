@@ -66,7 +66,7 @@ header {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
-
+  grid-template-columns: 3fr 2fr;
 }
 
 .header__button {
@@ -90,6 +90,15 @@ header > form {
 
 #search:focus-visible {
   outline: 2px solid #baafca;
+}
+
+.header__profile-section {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: end;
+  column-gap: 1.5rem;
+  padding-right: 1rem;
 }
 
 .header__profile-picture {
