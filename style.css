@@ -30,10 +30,10 @@ button {
 
 :root {
   /* Color Palette */
-  --primary: #6200ee;
+  --primary: #6e15ea;
   --primary-background: #e7e1f1;
   --primary-shadow: #bbb6c3;
-  --primary-variant: #3600b2;
+  --primary-variant: #4400b2;
   --secondary: #02dbc6;
   --secondary-variant: #018687;
   --background: #fefffe;
@@ -174,6 +174,11 @@ nav {
   padding-top: 0;
 }
 
+nav {
+  box-shadow: 0px 12px 8px -8px var(--primary-shadow);
+  z-index: 1;
+}
+
 .nav__greeting {
   display: grid;
   grid-template-areas: 
@@ -221,11 +226,6 @@ nav {
 
 .nav__buttons > *:hover {
   background-color: var(--primary-variant);
-}
-
-nav {
-  box-shadow: 0px 12px 8px -8px var(--primary-shadow);
-  z-index: 1;
 }
 
 main {
