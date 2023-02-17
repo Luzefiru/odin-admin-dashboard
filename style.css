@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html, body {
   height: 100%;
+}
+
+ul {
+  list-style-type: none;
 }
 
 :root {
@@ -29,27 +37,62 @@ html, body {
     "sidebar navbar"
     "sidebar content";
   
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 4.5fr;
   grid-template-rows: 1fr 1.5fr 8fr;
 }
 
-.dashboard-container > * {
-  background-color: antiquewhite;
+/* .dashboard-container > * {
   border: 2px red dashed;
-}
+} */
 
 header {
   grid-area: header;
+  background-color: var(--background);
 }
 
 aside {
   grid-area: sidebar;
+  background-color: var(--primary);
+
+  display: grid;
+  grid-template-rows: 4rem repeat(auto-fill, minmax(9rem, 1fr));
+  row-gap: 2.5rem;
+}
+
+.sidebar {
+  padding: 0 1rem;
+}
+
+.logo-header {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.logo-header__img {
+  width: 3rem;
+}
+
+.logo-header__text {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.sidebar > ul > li {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
 }
 
 nav {
   grid-area: navbar;
+  background-color: var(--background);
 }
 
 main {
   grid-area: content;
+  background-color: var(--primary-background);
 }
