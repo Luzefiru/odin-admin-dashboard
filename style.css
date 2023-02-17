@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+.dashboard-container {
+  height: 100%;
+
+  display: grid;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar navbar"
+    "sidebar content"
+}
+
+.dashboard-container > * {
+  background-color: antiquewhite;
+  border: 2px red dashed;
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+nav {
+  grid-area: navbar;
+}
+
+main {
+  grid-area: content;
+}
