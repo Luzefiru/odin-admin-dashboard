@@ -239,7 +239,7 @@ main {
     "projects trending";
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 2rem 2rem 3rem 1.5rem;
 }
 
@@ -267,6 +267,20 @@ article[id*="announcement-entry"] {
 .projects {
   grid-area: projects;
   place-items: center;
+}
+
+.card-list {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.projects__card {
+  background-color: var(--background);
+  border-radius: 10px;
+  box-shadow: 8px 8px 12px -8px var(--primary-shadow);
+
+  padding: 1.5rem;
 }
 
 .announcements {
