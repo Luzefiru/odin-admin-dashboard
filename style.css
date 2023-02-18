@@ -349,4 +349,17 @@ article[id*="trending-entry"] {
   padding: 1.5rem;
 
   border-left: 8px solid var(--secondary);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__card__buttons img {
+  width: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.projects__card__buttons {
+  align-self: flex-end;
+  margin-top: auto;
 }
