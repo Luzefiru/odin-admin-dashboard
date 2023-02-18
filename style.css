@@ -34,12 +34,12 @@ button {
   --primary-background: #e7e1f1;
   --primary-shadow: #bbb6c3;
   --primary-variant: #4400b2;
-  --secondary: #02dbc6;
-  --secondary-variant: #018687;
+  --secondary: #ea6f14;
+  --secondary-variant: #be5a10;
   --background: #fefffe;
   --surface: #fefffe;
   --error: #b00020;
-  --subheader: #747475;
+  --subheader: #585858;
 }
 
 .dashboard-container {
@@ -277,14 +277,6 @@ article[id*="announcement-entry"] {
   gap: 1.5rem;
 }
 
-.projects__card {
-  background-color: var(--background);
-  border-radius: 10px;
-  box-shadow: 8px 8px 12px -8px var(--primary-shadow);
-
-  padding: 1.5rem;
-}
-
 .announcements {
   grid-area: announcements;
 }
@@ -337,4 +329,24 @@ article[id*="trending-entry"] {
   grid-template-columns: 1fr 2.5fr;
   align-items: center;
   align-content: center;
+}
+
+.projects__card__description {
+  color: var(--subheader);
+  font-size: 15px;
+}
+
+.projects__card__header {
+  font-size: 17px;
+  margin-bottom: 0.5rem;
+}
+
+.projects__card {
+  background-color: var(--background);
+  border-radius: 10px;
+  box-shadow: 8px 8px 12px -8px var(--primary-shadow);
+
+  padding: 1.5rem;
+
+  border-left: 8px solid var(--secondary);
 }
