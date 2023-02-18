@@ -266,10 +266,12 @@ article[id*="announcement-entry"] {
 
 .projects {
   grid-area: projects;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-list {
+  flex: 1;
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr;
   gap: 1.5rem;
