@@ -39,6 +39,7 @@ button {
   --background: #fefffe;
   --surface: #fefffe;
   --error: #b00020;
+  --subheader: #747475;
 }
 
 .dashboard-container {
@@ -237,20 +238,9 @@ main {
     "projects announcements"
     "projects trending";
   grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 1rem;
   padding: 2rem 2rem 3rem 1.5rem;
-}
-
-.announcements_entries {
-  background-color: var(--background);
-  border-radius: 10px;
-  box-shadow: 8px 8px 12px -8px var(--primary-shadow);
-
-  flex: 1 1 auto;
-
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
 }
 
 hr {
@@ -269,7 +259,7 @@ article > h4 {
   margin-bottom: 0.25rem;
 }
 
-article[id*="entry"] {
+article[id*="announcement-entry"] {
   font-size: 12px;
   flex-shrink: 1;
 }
@@ -283,6 +273,52 @@ article[id*="entry"] {
   grid-area: announcements;
 }
 
+.announcements__entries,
+.trending__entries {
+  background-color: var(--background);
+  border-radius: 10px;
+  box-shadow: 8px 8px 12px -8px var(--primary-shadow);
+
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
 .trending {
   grid-area: trending;
+  display: flex;
+  flex-direction: column;
+}
+
+.trending__entries {
+  display: grid;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+}
+
+article[id*="trending-entry"] img {
+  grid-area: img;
+  width: 3.5rem;
+  border-radius: 100%;
+}
+
+.project-name {
+  color: var(--subheader);
+  font-size: 16px;
+}
+
+.handle {
+  font-weight: 500;
+}
+
+article[id*="trending-entry"] {
+  display: grid;
+  grid-template-areas:
+    "img handle"
+    "img project";
+  grid-template-columns: 1fr 2.5fr;
+  align-items: center;
+  align-content: center;
 }
